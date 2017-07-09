@@ -1,0 +1,24 @@
+<div class="row row-profile">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>My Orders</h1>
+        <hr>
+        <h2>All the items that I have purchased</h2>
+        {{#each orders }} <!--Each panel should be one order thats why i need to loop-->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul class="list-group">
+                        {{#each this.items }} <!--loop through all the items and items field is the one i created in user.js  order.items = cart.generateArray(); on line 21-->
+                            <li class="list-group-item">
+                                <span class="badge">{{ this.price }} $</span>
+                                {{ this.item.title }} | {{ this.qty }} 
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <strong>Total Price: ${{ this.cart.totalPrice }}</strong>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

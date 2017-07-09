@@ -1,0 +1,83 @@
+{{#if products}}
+	<div class="row row-shoppingcart">
+		<div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<span style="font-size: 20px;">Items</span> 
+					<span style="float:right; font-size: 20px;">Quantity</span>
+				</li>
+			</ul>
+			
+			<ul class="list-group">
+				{{#each products}}
+					
+					<li class="list-group-item">
+						
+						<span>
+							<a href="/reduce/{{this.item._id}}" style="float:right; margin-left:10px; color:#ffc107; font-size:20px"> - </a>
+						</span>
+						
+						<span class="badge" style="margin-top:1%"> 
+							{{this.qty}} 
+						</span>
+						
+						<span>
+							<a href="/add/{{this.item._id}}" style="float:right; margin-right: 10px; color:#ffc107; font-size:20px"> + </a>
+						</span>
+						
+						
+						
+						<div>
+							<strong style="margin-right:20px"> {{this.item.title}} </strong>
+						</div>
+						
+						
+						<span class="label label-success" style="margin: 5px;"> 
+							{{this.price}}$ 
+							<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+							{{this.qty}} items
+						</span> 
+						
+						
+						<div class="btn-group">
+							<button class="btn btn-warning btn-xs dropdown-toggle" type="button" data-toggle="dropdown" > Remove<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/remove/{{this.item._id}}"> Remove all items
+										<i class="fa fa-trash-o" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</li>
+				
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+			<strong style="color: #ffc107; font-size: 30px; font-family: 'Open Sans Condensed', sans-serif;"> Total: {{totalPrice}}$</strong>
+		</div>
+	</div>
+
+	<div class="row row-checkout">
+		<div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+			<a href="/checkout" class="btn btn-success" type="button" style="color: #212121; font-weight: bold; background-color: #ffc107; border:none;" onMouseOver="this.style.color='#212121'; this.style.background='#ffc107'" onMouseOut="this.style.color='#ffc107'; this.style.background='#212121'">Checkout</a>
+		</div>
+	</div>
+
+{{else}}
+
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+			<h2>Cart is empty</h2>
+		</div>
+	</div>
+
+{{/if}}
+
+
+

@@ -1,0 +1,350 @@
+
+/************************************SHOPPING CART****************************************/
+
+
+/**************************/
+/******LOADING ICON*******/
+/************************/
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("/images/loading.gif") no-repeat center center #212121;
+}
+
+
+/**********************/
+/******CONTAINER*******/
+/*********************/
+
+html, body {
+	height: 100%;
+	background-color:  #212121;
+	
+}
+
+.container-fluid {
+	background-image: url("../images/blackgb.jpg");
+	margin: 20px;
+	
+}
+
+.bodydev .row{
+	display:block;
+	margin: 10px;
+   
+}
+
+
+/**************************/
+/******FULLSTACK LOGO *****/
+/*************************/
+
+.container-fluid .row-fullstack{
+	height: 63px;
+	margin-bottom: -5px;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+.container-fluid .row-fullstack img{
+	float: left;
+	width: 400px;
+	margin-top: 15px;
+}
+
+.container-fluid .row-fullstack a{
+	float: right;
+	margin-top: 17px;
+} 
+
+/*********************************/
+/*******header.hbs - NAVBAR******/
+/*******************************/
+
+
+.container-fluid .navbar{
+	background-color: #ffc107;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	border-radius: 0;
+}
+.container-fluid .navbar  a{
+	color:#212121;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	letter-spacing: -1px;
+}
+.container-fluid .navbar a:hover{
+	color: #ffc107;
+	background-color: #212121;
+}
+.container-fluid .navbar .navbar-nav li a{
+	color: #212121;
+}
+.container-fluid .navbar .navbar-nav li a:hover{
+	color: #ffc107;
+	background-color: #212121;
+}
+.container-fluid .navbar .dropdown-menu{
+	background-color: #ffc107;
+}
+
+/***************************/
+/*****THUMBNAIL IMG********/
+/*************************/
+
+.headerofbody h1{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #ffc107;
+	opacity: .7;
+}
+.thumbnail{
+	margin: 50px;
+	max-width: 230px;
+	background-color: transparent; 
+	/*border: 1px solid #ffc107;*/
+	border: 0;
+	
+}
+.container-fluid .row .thumbnail img{
+	max-height: 200px;
+	max-width: 200px;
+	margin-bottom: 0;
+}
+.container-fluid .row .thumbnail .caption{
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.container-fluid .row .thumbnail .caption h3{
+	color: #ffc107;
+	margin-top: 0;
+}
+.container-fluid .row .thumbnail .caption p{
+	color: #fff;
+}
+.container-fluid .row .thumbnail .caption .price{
+	
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 5px;
+	
+}
+
+.container-fluid .row .thumbnail .caption .btn-warning{
+	width: 80px;
+	border-radius: 0;
+	background-color:  #212121;
+	color: #ffc107;
+	font-weight: bold;
+	font-family: 'Luckiest Guy', cursive;
+
+
+}
+
+.container-fluid .row .thumbnail .caption .btn-warning:hover{
+
+	background-color: #ffc107;
+	color: #212121;
+}
+
+/***************************/
+/*****SIGN IN PAGE*********/
+/*************************/
+.row-signup p{
+	color: #000;
+	font-weight: bold;
+}
+.row-signup a{
+	color:  #6f5403;
+	text-decoration: underline;
+	font-size: 23px;
+}
+.row-signup a:hover{
+	color:  #ffc107;
+	text-decoration: underline;
+	font-size: 23px;
+}
+
+/***************************/
+/*****SIGN UP PAGE*********/
+/*************************/
+
+.row-signup{
+	height: 500px;
+	margin: 0 auto;
+	
+}
+
+.row-signup h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	color: #ffc107;
+	text-align: center;
+}
+.row-signup label{
+	color: #d8d8d8;
+}
+.row-signup .btn{
+	background-color: #ffc107;
+	color: #212121;
+	font-weight: bold;
+	font-size: 20px;
+	width: 50%;
+	margin-left: 20%;
+	
+}.row-signup .btn:hover{
+	background-color: #212121;
+	color: #ffc107;
+}
+
+
+/***************************/
+/*****PROFILE PAGE*********/
+/*************************/
+
+.row-profile h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	color: #ffc107;
+	text-align: center;
+}
+
+.row-profile h2{
+	color: #ffc107;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.row-profile .panel-body{
+	background-color: #ffc107;
+	color: #ffc107;
+
+}
+
+.row-profile .list-group-item{
+	background-color: #212121;
+	border: 1px solid black;
+}
+
+.row-profile .panel-footer{
+	background-color: #212121;
+	color: #ffc107;
+	border: 1px solid black;
+
+
+}
+
+
+/****************************/
+/*****SHOPPING CART*********/
+/**************************/
+
+.row-shoppingcart .list-group-item{
+	background-color: #212121;
+	border: 1px solid black;
+	color: #ffc107;
+}
+
+.row-shoppingcart .btn-warning{
+	color: #212121;
+	font-weight: bold;
+	background-color: #ffc107;
+	border: none;
+}
+
+.row-shoppingcart .btn-warning:hover{
+	color: #ffc107;
+	font-weight: bold;
+	background-color: #212121;
+}
+
+.row-shoppingcart .label-success{
+	color: #212121;
+	font-weight: bold;
+	background-color: #ffc107;
+}
+
+.row-shoppingcart .dropdown-menu{
+	color: #212121;
+	font-weight: bold;
+	background-color: #ffc107;
+}
+.row-shoppingcart .dropdown-menu li a:hover{
+	color: #ffc107;
+	font-weight: bold;
+	background-color: #212121;
+}
+
+
+.row h2{
+	font-weight: bold;
+	color: #ffc107;
+	text-align: center;
+}
+
+
+/****************************/
+/*****CHECKOUT PAGE*********/
+/**************************/
+
+.row-checkout h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	color: #ffc107;
+	text-align: center;
+}
+
+.row-checkout h4{
+	color: #ffc107;
+	text-align: center;
+}
+
+.row-checkout #checkout-form{
+	color: #ffc107;
+	font-weight: bold;
+	font-size: 18px;
+}
+.row-checkout input{
+	background-color: #212121;
+	border: 2px solid #ffc107;
+}
+
+.row-checkout .btn-warning{
+	color: #212121;
+	font-weight: bolder;
+	background-color: #ffc107;
+	border: none;
+
+}
+
+.row-checkout .btn-warning:hover{
+	color: #ffc107;
+	font-weight: bold;
+	background-color: #212121;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
